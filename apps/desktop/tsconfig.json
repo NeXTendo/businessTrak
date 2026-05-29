@@ -1,0 +1,16 @@
+{
+  "extends": "../../tsconfig.json",
+  "compilerOptions": {
+    "jsx": "react-jsx",
+    "outDir": "./dist",
+    "rootDir": "../../",
+    "composite": false,
+    "declaration": false,
+    "paths": {
+      "@chatowa/types": ["../../packages/types/src"],
+      "@chatowa/utils": ["../../packages/utils/src"],
+      "@chatowa/ui":    ["../../packages/ui/src"]
+    }
+  },
+  "include": ["src", "../../packages/ui/src/**/*.d.ts"]
+}

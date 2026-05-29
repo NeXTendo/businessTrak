@@ -1,0 +1,23 @@
+{
+  "extends": "../../tsconfig.json",
+  "compilerOptions": {
+    "jsx": "preserve",
+    "outDir": "./dist",
+    "rootDir": "../../",
+    "composite": false,
+    "declaration": false,
+    "paths": {
+      "@/*":             ["./src/*"],
+      "@chatowa/types":  ["../../packages/types/src"],
+      "@chatowa/utils":  ["../../packages/utils/src"],
+      "@chatowa/ui":     ["../../packages/ui/src"]
+    }
+  },
+  "include": [
+    "src",
+    "next.config.ts",
+    ".next/types/**/*.ts",
+    "../../packages/ui/src/**/*.ts",
+    "../../packages/ui/src/**/*.tsx"
+  ]
+}

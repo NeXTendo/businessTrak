@@ -1,0 +1,2 @@
+export const isValidZambianPlate = (v: string) => /^[A-Z]{3}\s?\d{3,4}[A-Z]?$/.test(v.trim().toUpperCase());
+export const isValidPhone      = (v: string) => /^(\+260|0)(9|7)\d{8}$/.test(v.replace(/\s/g, ''));

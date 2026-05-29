@@ -1,0 +1,4 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+:root { --navy: #2C3E50; --silver: #BDC3C7; --orange: #E67E22; }
